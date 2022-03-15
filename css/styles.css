@@ -1,0 +1,394 @@
+:root {
+  --main-color: #212121;
+  --highlight-color: #2196f3;
+  --aux-text-color: #757575;
+  --background-color: #2f303a;
+  --hero-footer-text-color: #fff;
+  --filter-button-background-color: #f5f4fa;
+  --order-button-hover-focus: #188ce8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* reset */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.heading {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+/* container */
+
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* logos */
+.top-logo,
+.bottom-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--highlight-color);
+}
+
+.top-logo {
+  margin-right: 93px;
+}
+
+/* contacts-hover-focus-active */
+.contact:hover,
+.contact:focus,
+.contact:active {
+  color: var(--highlight-color);
+  opacity: 1;
+}
+
+/* header */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.top-logo {
+  display: inline-block;
+  padding: 25px 0;
+}
+
+.header,
+.navigation,
+.top-contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-list-link,
+.top-mail,
+.top-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+}
+
+.top-contacts {
+  margin-left: auto;
+}
+
+.navigation,
+.top-contacts {
+  column-gap: 50px;
+}
+
+.top-tel,
+.top-mail {
+  color: var(--aux-text-color);
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.nav-list-link:active {
+  color: var(--highlight-color);
+}
+
+.header .logo-span {
+  color: var(--main-color);
+}
+
+/* order section */
+
+.order-section {
+  background-color: var(--background-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.order-section-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--hero-footer-text-color);
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+}
+
+.order-btn {
+  display: block;
+  font-family: inherit;
+  text-align: center;
+  background-color: var(--highlight-color);
+  color: var(--hero-footer-text-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-btn-text {
+  display: inline-block;
+  padding: 10px 32px;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--order-button-hover-focus);
+  border-radius: 4px;
+  border: 1px solid var(--highlight-color);
+}
+
+/* advantages section */
+
+.advantages-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.advantages-list-item {
+  width: 270px;
+}
+
+.advantages-item-title {
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages-item-description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--aux-text-color);
+  margin: 0;
+}
+
+/* about section */
+
+.about-section-title,
+.team-section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.about-section-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.about-section {
+  padding-top: 0;
+}
+
+/* team section */
+.team-section {
+  background-color: var(--filter-button-background-color);
+}
+
+.team-section-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.team-list-item {
+  background-color: var(--hero-footer-text-color);
+}
+
+.team-member-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-member-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--aux-text-color);
+  margin: 0;
+}
+
+.team-item-div {
+  padding: 30px 0;
+}
+
+/* footer */
+.footer {
+  background-color: var(--background-color);
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo-span {
+  color: var(--hero-footer-text-color);
+}
+
+.bottom-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.office-address {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--hero-footer-text-color);
+  margin-bottom: 10px;
+}
+
+.bottom-contacts-item {
+  margin-bottom: 10px;
+}
+
+.bottom-contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.bottom-mail,
+.bottom-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--hero-footer-text-color);
+  opacity: 0.6;
+}
+
+/* portfolio page */
+/* portfolio header - same */
+
+/* main-section */
+/* filter */
+
+.filter-div {
+  margin-bottom: 50px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.filter-title {
+  display: none;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--main-color);
+  background-color: var(--filter-button-background-color);
+  display: inline-block;
+  padding: 6px 22px;
+  border: 1px solid var(--filter-button-background-color);
+  border-radius: 4px;
+}
+
+.filter-button:active,
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--highlight-color);
+  color: var(--hero-footer-text-color);
+  border-radius: 4px;
+  border: 1px solid var(--highlight-color);
+}
+
+/* credentials */
+
+.credential-image {
+  display: block;
+}
+
+.credential-item-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.credential-item-description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--aux-text-color);
+  margin: 0;
+}
+
+.credentials-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.credential-item-text {
+  padding: 20px 24px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+/* portfolio footer - same */
