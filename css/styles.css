@@ -6,6 +6,7 @@
   --hero-footer-text-color: #fff;
   --filter-button-background-color: #f5f4fa;
   --order-button-hover-focus: #188ce8;
+  --advantages-icon-background-color: #f5f4fa;
 }
 
 body {
@@ -85,6 +86,12 @@ ul {
 }
 
 /* header */
+.contact-icon-phone {
+  box-sizing: content-box;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
 
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -138,7 +145,14 @@ ul {
 /* order section */
 
 .order-section {
-  background-color: var(--background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/img/main-page/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
   padding-bottom: 200px;
   padding-top: 200px;
 }
@@ -191,6 +205,11 @@ ul {
 
 .advantages-list-item {
   width: 270px;
+}
+
+.advantages-icon {
+  background-color: var(--advantages-icon-background-color);
+  border: 4px var(--advantages-icon-background-color);
 }
 
 .advantages-item-title {
