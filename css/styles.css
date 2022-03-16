@@ -86,12 +86,6 @@ ul {
 }
 
 /* header */
-.contact-icon-phone {
-  box-sizing: content-box;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
 
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -130,6 +124,8 @@ ul {
 .top-tel,
 .top-mail {
   color: var(--aux-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .nav-list-link:hover,
@@ -140,6 +136,17 @@ ul {
 
 .header .logo-span {
   color: var(--main-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--aux-text-color);
+}
+
+.contact-icon:hover,
+.contact-icon:focus,
+.contact-icon:active {
+  fill: var(--highlight-color);
 }
 
 /* order section */
