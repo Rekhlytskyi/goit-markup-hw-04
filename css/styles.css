@@ -205,6 +205,17 @@ ul {
 
 /* advantages section */
 
+.advantages-icon-container {
+  background-color: var(--filter-button-background-color);
+  margin-bottom: 30px;
+}
+
+.advantages-pic {
+  margin: 25px 100px;
+  width: 70px;
+  height: 70px;
+}
+
 .advantages-list {
   display: flex;
   column-gap: 30px;
@@ -268,6 +279,9 @@ ul {
 
 .team-list-item {
   background-color: var(--hero-footer-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-member-title {
@@ -290,6 +304,20 @@ ul {
 
 .team-item-div {
   padding: 30px 0;
+}
+
+.team-icons-container {
+  margin: 16px auto 0 auto;
+}
+
+.social-icons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 44px;
+}
+
+.social-icon {
 }
 
 /* footer */
