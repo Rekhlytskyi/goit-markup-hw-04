@@ -7,6 +7,7 @@
   --filter-button-background-color: #f5f4fa;
   --order-button-hover-focus: #188ce8;
   --advantages-icon-background-color: #f5f4fa;
+  --icon-client-social: #afb1b8;
 }
 
 body {
@@ -249,7 +250,8 @@ ul {
 /* about section */
 
 .about-section-title,
-.team-section-title {
+.team-section-title,
+.client-section-title {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -315,11 +317,55 @@ ul {
   flex-direction: row;
   justify-content: center;
   height: 44px;
+  column-gap: 10px;
 }
 
 .social-icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--icon-client-social);
 }
 
+.social-icon-container {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+/* clients section */
+
+.client-section-title {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.client-icon-container {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--icon-client-social);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-logo {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-client-social);
+}
+
+.client-icon-container:hover,
+.client-logo:hover {
+  border-color: var(--highlight-color);
+  fill: var(--highlight-color);
+}
 /* footer */
 .footer {
   background-color: var(--background-color);
